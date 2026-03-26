@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandeep | Portfolio</title>
+  <title>Sandeep | Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Sandeep, a Senior Software Engineer specializing in scalable architectures, performant frontend experiences, and robust backend systems.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">S<span class="accent">.</span></a>
+      <a href="#home" class="nav-logo">Sandeep<span class="accent">.</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
@@ -22,8 +23,11 @@
       <ul class="nav-menu" id="navMenu">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="#" class="btn btn-outline btn-sm nav-resume" target="_blank" rel="noopener noreferrer">Resume</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -33,18 +37,29 @@
   <section class="hero" id="home">
     <div class="hero-bg-glow"></div>
     <div class="hero-container">
-      <p class="hero-greeting">Hi, my name is</p>
-      <h1 class="hero-name">Sandeep<span class="accent">.</span></h1>
-      <h2 class="hero-title">I build things for the web.</h2>
+      <div class="hero-badge">Available for new opportunities</div>
+      <h1 class="hero-name">Engineering digital <br/>products that <span class="accent-text">scale.</span></h1>
       <p class="hero-description">
-        I'm a developer passionate about crafting clean, performant, and
-        user-friendly digital experiences. Currently focused on building
-        accessible, human-centered products.
+        I am a Senior Software Engineer specializing in high-performance web applications, resilient backend architectures, and elegant user interfaces. I bridge the gap between complex engineering challenges and seamless user experiences.
       </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      
+      <div class="social-links-hero">
+        <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="mailto:contact@example.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
       </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Case Studies</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+
       <div class="hero-scroll-indicator">
         <div class="scroll-line"></div>
       </div>
@@ -54,46 +69,74 @@
   <!-- About Section -->
   <section class="section" id="about">
     <div class="section-container">
-      <h2 class="section-heading"><span class="accent">01.</span> About Me</h2>
+      <div class="section-header">
+        <h2 class="section-heading">About Me</h2>
+        <div class="section-line"></div>
+      </div>
 
       <div class="about-grid">
         <div class="about-content">
           <p class="about-text">
-            I'm a passionate developer who loves turning ideas into real,
-            functional products. My journey started with curiosity about how
-            websites work, and it quickly evolved into a deep love for building
-            full-stack applications. I enjoy working across the entire stack —
-            from crafting pixel-perfect UIs to designing robust APIs.
+            I build robust, production-grade software with a focus on maintainability, performance, and user-centric design. With a strong foundation in full-stack architecture, I take ownership of the entire product lifecycle—from conceptual system design to deployment and scaling.
           </p>
           <p class="about-text">
-            When I'm not coding, you'll find me exploring new technologies,
-            contributing to open-source projects, or writing about things I've
-            learned along the way. I believe in writing clean, maintainable
-            code and continuously improving my craft.
+            I don't just write code; I solve engineering problems. Whether it's optimizing state management in complex React applications, designing resilient RESTful APIs, or setting up reliable CI/CD pipelines, I focus on delivering tangible business value through technology. My approach combines technical excellence with strategic product thinking.
           </p>
 
-          <h3 class="about-skills-heading">Technologies I work with:</h3>
-          <ul class="skills-list">
-            <li class="skill-tag">JavaScript</li>
-            <li class="skill-tag">TypeScript</li>
-            <li class="skill-tag">React</li>
-            <li class="skill-tag">Next.js</li>
-            <li class="skill-tag">Node.js</li>
-            <li class="skill-tag">Python</li>
-            <li class="skill-tag">MongoDB</li>
-            <li class="skill-tag">PostgreSQL</li>
-            <li class="skill-tag">Git</li>
-            <li class="skill-tag">Docker</li>
-            <li class="skill-tag">Tailwind CSS</li>
-            <li class="skill-tag">REST APIs</li>
-          </ul>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3 class="skill-title">Frontend Engineering</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">TypeScript</li>
+                <li class="skill-tag">React</li>
+                <li class="skill-tag">Next.js</li>
+                <li class="skill-tag">Tailwind CSS</li>
+                <li class="skill-tag">Redux / Zustand</li>
+              </ul>
+            </div>
+            
+            <div class="skill-category">
+              <h3 class="skill-title">Backend Architecture</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">Node.js</li>
+                <li class="skill-tag">Python</li>
+                <li class="skill-tag">RESTful APIs</li>
+                <li class="skill-tag">GraphQL</li>
+                <li class="skill-tag">Microservices</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-title">Database & Infrastructure</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">PostgreSQL</li>
+                <li class="skill-tag">MongoDB</li>
+                <li class="skill-tag">Redis</li>
+                <li class="skill-tag">Docker</li>
+                <li class="skill-tag">AWS ECS / S3</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="about-photo-wrapper">
-          <div class="about-photo">
-            <div class="about-photo-placeholder">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              <span>Your Photo</span>
+        <div class="about-identity">
+          <div class="identity-card">
+            <div class="identity-avatar">
+              <span class="initials">S.</span>
+            </div>
+            <div class="identity-info">
+              <h3>Sandeep</h3>
+              <p>Senior Software Engineer</p>
+            </div>
+            <div class="identity-stats">
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects</span>
+              </div>
             </div>
           </div>
         </div>
@@ -102,73 +145,110 @@
   </section>
 
   <!-- Projects Section -->
-  <section class="section" id="projects">
+  <section class="section bg-alternate" id="projects">
     <div class="section-container">
-      <h2 class="section-heading"><span class="accent">02.</span> Projects</h2>
-      <p class="section-subtitle">A few things I've built recently.</p>
+      <div class="section-header">
+        <h2 class="section-heading">Featured Work</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">A selection of engineering projects focused on scalability, performance, and impact.</p>
 
-      <div class="projects-grid">
-        <!-- Project Card 1 -->
-        <article class="project-card">
-          <div class="project-card-header">
-            <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <a href="#" class="project-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
+      <div class="projects-layout">
+        
+        <!-- Case Study 1 -->
+        <article class="case-study-card">
+          <div class="case-study-visual">
+            <div class="visual-placeholder">
+              <span class="visual-tag">Enterprise SaaS</span>
+            </div>
           </div>
-          <h3 class="project-name">TaskFlow App</h3>
-          <p class="project-description">
-            A full-stack task management application with real-time updates,
-            drag-and-drop boards, and team collaboration features.
-          </p>
-          <ul class="project-tech">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Socket.io</li>
-          </ul>
+          <div class="case-study-content">
+            <div class="case-study-meta">
+              <h3 class="project-name">TaskFlow Enterprise Analytics</h3>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub Repo" class="icon-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" aria-label="Live Demo" class="icon-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="case-study-details">
+              <div class="detail-block">
+                <h4>The Challenge</h4>
+                <p>A leading task management platform needed a real-time analytics dashboard capaable of processing millions of events to provide instant insights for enterprise teams.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Architecture & Solution</h4>
+                <p>Architected an event-driven data pipeline using Node.js and Redis streams. Built a highly responsive frontend in React with virtualized lists and memoized charting components to maintain 60FPS rendering.</p>
+              </div>
+              <div class="detail-block outcome">
+                <h4>Impact</h4>
+                <p>Reduced P99 dashboard load times by 40% and improved client retention by providing actionable metrics. Successfully handles 5K+ concurrent WebSocket connections.</p>
+              </div>
+            </div>
+            
+            <ul class="project-tech">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Redis</li>
+              <li>Socket.io</li>
+              <li>PostgreSQL</li>
+            </ul>
+            
+            <div class="case-study-cta">
+              <a href="#" class="btn btn-primary btn-sm">View Live Project</a>
+              <a href="#" class="btn btn-outline btn-sm">Read Architecture Document</a>
+            </div>
+          </div>
         </article>
 
-        <!-- Project Card 2 -->
-        <article class="project-card">
-          <div class="project-card-header">
-            <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <a href="#" class="project-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
+        <!-- Case Study 2 -->
+        <article class="case-study-card">
+          <div class="case-study-visual">
+            <div class="visual-placeholder">
+              <span class="visual-tag">FinTech Data Viz</span>
+            </div>
           </div>
-          <h3 class="project-name">WeatherLens</h3>
-          <p class="project-description">
-            A weather dashboard that visualizes forecast data with interactive
-            charts, location search, and saved favorites.
-          </p>
-          <ul class="project-tech">
-            <li>TypeScript</li>
-            <li>Next.js</li>
-            <li>Chart.js</li>
-            <li>REST API</li>
-          </ul>
-        </article>
-
-        <!-- Project Card 3 -->
-        <article class="project-card">
-          <div class="project-card-header">
-            <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <a href="#" class="project-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
+          <div class="case-study-content">
+            <div class="case-study-meta">
+              <h3 class="project-name">MarketLens Trading Terminal</h3>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub Repo" class="icon-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="case-study-details">
+              <div class="detail-block">
+                <h4>The Challenge</h4>
+                <p>Retail traders lacked access to high-fidelity, institutional-grade market data visualization tools that were performant on consumer hardware.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Architecture & Solution</h4>
+                <p>Developed a high-performance Next.js application utilizing server-side rendering for SEO and fast initial paints. Implemented custom WebGL rendering for rendering thousands of tick data points efficiently alongside complex financial indicators.</p>
+              </div>
+              <div class="detail-block outcome">
+                <h4>Impact</h4>
+                <p>Delivered an interface with sub-50ms interaction latency. Adopted by over 2,000 active daily users within the first month of beta release.</p>
+              </div>
+            </div>
+            
+            <ul class="project-tech">
+              <li>TypeScript</li>
+              <li>Next.js</li>
+              <li>WebGL</li>
+              <li>REST API</li>
+              <li>Docker</li>
+            </ul>
+            
+            <div class="case-study-cta">
+              <a href="#" class="btn btn-primary btn-sm">View Demo</a>
+            </div>
           </div>
-          <h3 class="project-name">DevVault CLI</h3>
-          <p class="project-description">
-            A command-line tool for developers to scaffold projects, manage
-            environment configs, and automate repetitive workflows.
-          </p>
-          <ul class="project-tech">
-            <li>Python</li>
-            <li>Click</li>
-            <li>SQLite</li>
-            <li>Shell</li>
-          </ul>
         </article>
       </div>
     </div>
@@ -177,33 +257,60 @@
   <!-- Contact Section -->
   <section class="section" id="contact">
     <div class="section-container">
-      <h2 class="section-heading"><span class="accent">03.</span> Contact</h2>
-      <p class="section-subtitle">Have a question or want to work together? Drop me a message.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-header">
+            <h2 class="section-heading">Let's Connect</h2>
+            <div class="section-line"></div>
+          </div>
+          <p class="contact-text">
+            I'm currently exploring new opportunities and open to discussing technical leadership roles, senior engineering positions, or interesting architectural challenges.
+          </p>
+          <p class="contact-text">
+            Whether you have a product vision you need executed or an engineering team looking for a strong contributor, my inbox is always open.
+          </p>
+          
+          <div class="contact-methods">
+            <a href="mailto:contact@example.com" class="contact-method-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>contact@example.com</span>
+            </a>
+            <a href="https://linkedin.com" class="contact-method-item" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com" class="contact-method-item" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub Repositories</span>
+            </a>
+          </div>
+        </div>
 
-      <div class="contact-wrapper">
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
-          </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="What's on your mind?" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-        </form>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="How can we work together?" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          </form>
 
-        <div class="contact-success" id="contactSuccess">
-          <div class="success-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <div class="contact-success" id="contactSuccess">
+            <div class="success-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="success-heading">Message Sent Successfully</h3>
+            <p class="success-text">Thank you for reaching out. I'll review your message and get back to you within 24 hours.</p>
+            <button type="button" class="btn btn-outline btn-reset" id="contactReset">Send Another Message</button>
           </div>
-          <h3 class="success-heading">Message Sent!</h3>
-          <p class="success-text">Thanks for reaching out. I'll get back to you soon.</p>
-          <button type="button" class="btn btn-outline btn-reset" id="contactReset">Send Another</button>
         </div>
       </div>
     </div>
@@ -211,7 +318,14 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>Designed & Built by Sandeep</p>
+    <div class="footer-container">
+      <div class="footer-brand">Sandeep<span class="accent">.</span></div>
+      <p class="footer-copyright">&copy; 2026 Sandeep. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
