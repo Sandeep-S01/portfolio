@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Singh - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eef2f7;
+      color: #172033;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.2px;
+      line-height: 1.38;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 12mm 13mm 11mm;
+      background: #ffffff;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #14213d;
+    }
+
+    h1 {
+      margin: 0;
+      color: #0f172a;
+      font-size: 28px;
+      line-height: 1;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .role {
+      margin: 5px 0 7px;
+      color: #2563eb;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      max-width: 128mm;
+      margin: 0;
+      color: #344154;
+      font-size: 10.5px;
+    }
+
+    .contact {
+      min-width: 58mm;
+      color: #344154;
+      font-size: 9.6px;
+      text-align: right;
+    }
+
+    .contact div {
+      margin-bottom: 3px;
+    }
+
+    .contact a {
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 58mm;
+      gap: 10mm;
+      margin-top: 10px;
+    }
+
+    section {
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      margin: 0 0 5px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #d6deeb;
+      color: #14213d;
+      font-size: 11.5px;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0;
+      color: #111827;
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .item {
+      margin-bottom: 8px;
+    }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 2px;
+    }
+
+    .meta {
+      flex: 0 0 auto;
+      color: #64748b;
+      font-size: 9px;
+      font-weight: 700;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .sub {
+      margin: 1px 0 3px;
+      color: #475569;
+      font-size: 9.7px;
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 13px;
+    }
+
+    li {
+      margin-bottom: 2.5px;
+      color: #26364a;
+    }
+
+    .project h3 {
+      display: inline;
+    }
+
+    .project .stack {
+      color: #2563eb;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 2px;
+    }
+
+    .chip {
+      padding: 2px 6px;
+      border: 1px solid #d6deeb;
+      border-radius: 999px;
+      background: #f8fafc;
+      color: #24364d;
+      font-size: 8.8px;
+      font-weight: 700;
+    }
+
+    .side p {
+      margin: 0 0 6px;
+      color: #334155;
+    }
+
+    .skill-block {
+      margin-bottom: 7px;
+    }
+
+    .skill-title {
+      margin-bottom: 2px;
+      color: #0f172a;
+      font-size: 9.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .compact-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .compact-list li {
+      margin-bottom: 3px;
+      color: #344154;
+    }
+
+    .link {
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Sandeep Singh</h1>
+        <div class="role">Full Stack .NET Developer</div>
+        <p class="summary">
+          Full Stack Developer with 3+ years of experience building secure, scalable enterprise web applications across ASP.NET MVC, C#, MySQL, REST APIs, and Bootstrap. Strong in production support, clean backend design, input validation, and business-critical workflow automation.
+        </p>
+      </div>
+      <div class="contact">
+        <div>Mumbai, India</div>
+        <div><a href="tel:+918652096712">(+91) 8652096712</a></div>
+        <div><a href="mailto:sandeepsingh19480@gmail.com">sandeepsingh19480@gmail.com</a></div>
+        <div><a href="https://sandeep-s01.github.io/portfolio/">sandeep-s01.github.io/portfolio</a></div>
+        <div><a href="https://github.com/Sandeep-S01">github.com/Sandeep-S01</a></div>
+        <div><a href="https://www.linkedin.com/in/sandeep-singh">linkedin.com/in/sandeep-singh</a></div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="main">
+        <section>
+          <h2>Experience</h2>
+          <div class="item">
+            <div class="item-head">
+              <h3>Web Developer - Mos Utility</h3>
+              <div class="meta">Aug 2022 - Present</div>
+            </div>
+            <div class="sub">ASP.NET MVC, C#, MySQL, REST APIs, Bootstrap</div>
+            <ul>
+              <li>Develop and maintain enterprise web applications supporting utility, payroll, insurance, and tourism operations.</li>
+              <li>Build full-stack features from database workflow and API integration through responsive UI delivery.</li>
+              <li>Implement parameterized queries, server-side validation, and safer data-entry flows to reduce SQL injection exposure.</li>
+              <li>Debug production issues, enhance existing modules, and collaborate with cross-functional teams in Agile release cycles.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-head">
+              <h3>Tax Verification - SurePrep India Pvt Ltd</h3>
+              <div class="meta">Jan 2022 - Mar 2022</div>
+            </div>
+            <ul>
+              <li>Worked in operations on tax verification workflows requiring accuracy, structured review, and process discipline.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Selected Projects</h2>
+          <div class="item project">
+            <h3>Payroll Management Software</h3>
+            <span class="stack"> - ASP.NET MVC, C#, MySQL, PDF Generation</span>
+            <ul>
+              <li>Built dual admin/employee portals for leave, fieldwork, loan approvals, attendance imports, salary generation, and downloadable salary slips.</li>
+            </ul>
+          </div>
+          <div class="item project">
+            <h3>IRCTC Tourism Integration</h3>
+            <span class="stack"> - ASP.NET Web API, REST, C#, MySQL</span>
+            <ul>
+              <li>Integrated package booking, rail tours, air travel, payment processing, and cancellation workflows into an existing platform.</li>
+            </ul>
+          </div>
+          <div class="item project">
+            <h3>Care Insurance Integration</h3>
+            <span class="stack"> - ASP.NET MVC, C#, .NET Framework, MySQL</span>
+            <ul>
+              <li>Delivered policy management, premium calculation, and claims-processing workflows for car insurance operations.</li>
+            </ul>
+          </div>
+          <div class="item project">
+            <h3>Employee Reporting Tool</h3>
+            <span class="stack"> - ASP.NET MVC, C#, MySQL, Bootstrap</span>
+            <ul>
+              <li>Created daily task logging with document uploads, completion status review, and senior feedback loops.</li>
+            </ul>
+          </div>
+          <div class="item project">
+            <h3>TaxBot</h3>
+            <span class="stack"> - TypeScript, Web App, GitHub</span>
+            <ul>
+              <li>Built a public TypeScript tax-assistant repository focused on tax-related question handling and workflow exploration. <a class="link" href="https://github.com/Sandeep-S01/TaxBot">github.com/Sandeep-S01/TaxBot</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <aside class="side">
+        <section>
+          <h2>Core Skills</h2>
+          <div class="skill-block">
+            <div class="skill-title">Backend</div>
+            <div class="chips">
+              <span class="chip">C#</span>
+              <span class="chip">.NET</span>
+              <span class="chip">ASP.NET MVC</span>
+              <span class="chip">ASP.NET Web API</span>
+              <span class="chip">.NET Framework</span>
+              <span class="chip">Python</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-title">Frontend & Database</div>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Responsive UI</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-title">Engineering</div>
+            <div class="chips">
+              <span class="chip">REST APIs</span>
+              <span class="chip">Git</span>
+              <span class="chip">Visual Studio</span>
+              <span class="chip">Agile/Scrum</span>
+              <span class="chip">Input Validation</span>
+              <span class="chip">Parameterized SQL</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <ul class="compact-list">
+            <li><strong>B.Sc. Computers</strong><br />Thakur Ramnarayan College of Arts and Commerce, 2021</li>
+            <li><strong>HSC</strong><br />Maharashtra Board, 2018</li>
+            <li><strong>SSC</strong><br />Maharashtra Board, 2016</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Certification</h2>
+          <p>Python Programming - Python for Everybody</p>
+        </section>
+
+        <section>
+          <h2>Languages</h2>
+          <p>English, Hindi, Marathi</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
