@@ -1,29 +1,47 @@
-# Portfolio Redesign Changelog
+# Portfolio Application Notes
 
-## 1. UI & Design System
+## Current Implementation
 
-*   **Color Palette**: Replaced the generic dark blue/cyan palette with a sleek, premium, deep dark mode (`#050505` base) featuring emerald green (`#10b981`) accents and subtle glows for a more established, "Senior Engineer" feel.
-*   **Typography**: Implemented a stronger typography scale using Inter with tightened tracking (`letter-spacing`) on headings for a sharper look.
-*   **Spacing & Structure**: Expanded section padding and maximum widths for better breathing room (`max-width: 1200px`, `section-padding: 8rem`).
-*   **Glassmorphism**: Added `backdrop-filter: blur(20px)` to the navigation bar and modal overlays for modern premium fidelity.
-*   **Interactive Elements**: Updated buttons with clean borders, slight hover lift (`translateY(-2px)`), and modern shadow glows.
+This portfolio is implemented as a lightweight static site with no build step. The public entry point is `index.html`, with shared styling in `style.css` and browser behavior in `script.js`.
 
-## 2. Content & Positioning
+## Site Structure
 
-*   **Hero Section**: Completely rewrote the messaging. Replaced "I build things for the web" with a high-value statement: "Engineering digital products that scale." Added a subtle availability badge ("Available for new opportunities").
-*   **About Section**: Replaced generic text with a confident narrative focusing on product thinking, architecture, and engineering value. Grouped skills rationally into "Frontend Engineering", "Backend Architecture", and "Database & Infrastructure" to demonstrate a mature T-shaped skill profile.
-*   **Identity Card**: Replaced the placeholder "Your Photo" SVG with a sleek avatar/identity metrics card showing "5+ Years Exp" and "20+ Projects".
-*   **Projects (Work) Section**: Transformed basic project cards into comprehensive "Case Studies". Each now details the Challenge, Solution & Architecture, and Impact. Designed an asymmetric alternating grid layout for a magazine-like case study feel.
+- `index.html` contains the main portfolio experience: sidebar identity area, About, Experience, Projects, Contact, social links, and resume links.
+- `resume.html` contains a print-friendly HTML resume layout.
+- `Resume_Sandeep.pdf` is the downloadable resume linked from the portfolio.
+- `favicon.svg` provides the browser icon.
 
-## 3. Credibility & UX
+## UI And Content
 
-*   **Trust Signals**: Added inline SVGs for GitHub, LinkedIn, and Email directly inside the Hero section for immediate accessibility.
-*   **Social & Contact Methods**: The contact section now features distinct, clickable social proof methods right next to the form.
-*   **Form UX**: Improved input focus states (subtle white borders rather than neon cyan), refined validation triggers, and added a simulated delay ("Sending...") before showing the success state.
-*   **Mobile Responsiveness**: Rebuilt the mobile menu logic to scroll-lock the `body` (`overflow: hidden`) to prevent scrolling underneath the modal. Refined grid behaviors strictly for tablet and mobile breakpoints.
+- Desktop uses a sticky left sidebar with name, role, navigation, social links, and availability badge.
+- Main content is organized into About, Experience, Projects, and Contact sections.
+- The current visual system uses a dark navy background with cyan accents, Syne headings, DM Sans body text, and Fira Code for technical labels.
+- Project cards are static HTML cards. Public GitHub builds link to their repositories; closed-source professional projects still use the GitHub profile link until dedicated public demos or case studies are available.
 
-## 4. Code & Performance
+## JavaScript Behavior
 
-*   **Refactored `script.js`**: Replaced static scroll-reveal class logic with dynamic selector bindings. Cleaned up observer margins and toggles.
-*   **Semantic HTML**: Ensured all sections, headings, articles, and buttons use appropriate HTML5 tags and aria attributes.
-*   **Animations**: Adjusted animations to be performant `opacity` and `transform` transitions mapping to custom cubic-bezier curves for a smoother, high-end feel.
+- Highlights the active sidebar navigation item while scrolling.
+- Reveals `.fade-in` elements with `IntersectionObserver`.
+- Smooth-scrolls internal anchor links.
+- Adds a subtle cursor glow on devices that do not request reduced motion.
+- Rotates the role text in the sidebar unless reduced motion is preferred.
+
+## Accessibility And Performance
+
+- Icon links include `aria-label` values.
+- External links use `rel="noopener noreferrer"`.
+- Motion-heavy effects respect `prefers-reduced-motion`.
+- The site is static and should load quickly on any static host.
+
+## Audit-Driven Design Updates
+
+- Increased body copy size and contrast for better scanning on laptops and mobile devices.
+- Added clearer hero positioning with direct project and resume calls to action.
+- Added outcome-focused About highlights for experience, domain breadth, and security-minded implementation.
+- Reworked the main experience entry with proof-oriented bullets.
+- Expanded project cards with Problem, Contribution, and Impact details.
+- Strengthened the final contact section with a more specific hiring-oriented CTA.
+- Added visible focus states and mobile-friendly full-width hero buttons.
+- Added additional public GitHub projects, including Loom, Velt, AuditTrail AI, ConnectAgents, AlphaGate / Sentra, and NutriSnap.
+- Updated the HTML resume with selected public GitHub projects and regenerated `Resume_Sandeep.pdf`.
+- Increased A4 resume font sizes and regenerated the PDF for better print/readability.
