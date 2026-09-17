@@ -80,6 +80,7 @@
   function closeMenu() {
     if (!siteNav || !menuBtn) return;
     siteNav.classList.remove("open");
+    menuBtn.classList.remove("open");
     menuBtn.setAttribute("aria-expanded", "false");
     menuBtn.setAttribute("aria-label", "Open menu");
   }
@@ -87,12 +88,13 @@
   if (menuBtn && siteNav) {
     menuBtn.addEventListener("click", function () {
       var isOpen = siteNav.classList.toggle("open");
+      menuBtn.classList.toggle("open", isOpen);
       menuBtn.setAttribute("aria-expanded", String(isOpen));
       menuBtn.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
     });
 
     siteNav.addEventListener("click", function (e) {
-      if (e.target && e.target.tagName === "A") {
+      if (e.target && (e.target.tagName === "A" || e.target.closest("a"))) {
         closeMenu();
       }
     });
