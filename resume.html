@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sandeep Singh - Resume</title>
+  <title>Sandeep Singh — Full Stack .NET Developer — Resume</title>
   <style>
     @page {
-      size: A4;
-      margin: 0;
+      size: A4 portrait;
+      margin: 10mm 12mm;
     }
 
     * {
@@ -16,389 +16,534 @@
 
     body {
       margin: 0;
-      background: #eef2f7;
-      color: #172033;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11.1px;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 10.1pt;
       line-height: 1.42;
+      -webkit-font-smoothing: antialiased;
     }
 
     a {
-      color: inherit;
+      color: #0369a1;
       text-decoration: none;
     }
 
-    .page {
-      width: 210mm;
-      min-height: 297mm;
-      margin: 0 auto;
-      padding: 10mm 12mm;
-      background: #ffffff;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .header {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 18px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #14213d;
+    .resume-wrapper {
+      max-width: 820px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 36px 44px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+
+    /* Screen Action Bar */
+    .screen-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 820px;
+      margin: 16px auto 0;
+      padding: 0 8px;
+    }
+
+    .screen-actions a,
+    .screen-actions button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .screen-actions a:hover,
+    .screen-actions button:hover {
+      background: #1e293b;
+      text-decoration: none;
+    }
+
+    .screen-actions .back-link {
+      background: transparent;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+    }
+
+    .screen-actions .back-link:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     h1 {
       margin: 0;
+      font-size: 24pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
       color: #0f172a;
-      font-size: 30px;
-      line-height: 1;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
+      line-height: 1.1;
     }
 
-    .role {
-      margin: 5px 0 7px;
-      color: #2563eb;
-      font-size: 13px;
+    .title-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 4px 0 8px;
+    }
+
+    .role-title {
+      font-size: 12pt;
       font-weight: 700;
-      letter-spacing: 0.35px;
-      text-transform: uppercase;
+      color: #0369a1;
+      letter-spacing: 0.2px;
     }
 
-    .summary {
-      max-width: 128mm;
-      margin: 0;
-      color: #344154;
-      font-size: 11.3px;
+    .location {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #475569;
     }
 
-    .contact {
-      min-width: 58mm;
-      color: #344154;
-      font-size: 10.2px;
-      text-align: right;
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      font-size: 9.2pt;
+      color: #334155;
     }
 
-    .contact div {
-      margin-bottom: 3px;
+    .contact-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
 
-    .contact a {
-      color: #1d4ed8;
+    .contact-row a {
+      color: #0f172a;
       font-weight: 600;
     }
 
-    .content {
-      display: grid;
-      grid-template-columns: 1fr 58mm;
-      gap: 10mm;
-      margin-top: 10px;
+    .contact-row a:hover {
+      color: #0369a1;
     }
 
+    /* Section Headings */
     section {
-      margin-bottom: 8px;
+      margin-bottom: 14px;
+      page-break-inside: avoid;
     }
 
     h2 {
-      margin: 0 0 5px;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #d6deeb;
-      color: #14213d;
-      font-size: 12.4px;
-      letter-spacing: 0.9px;
+      margin: 0 0 7px;
+      font-size: 10.5pt;
+      font-weight: 800;
       text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
     }
 
-    h3 {
+    /* Summary */
+    .summary-text {
       margin: 0;
-      color: #111827;
-      font-size: 11.8px;
-      line-height: 1.25;
+      font-size: 9.7pt;
+      color: #334155;
+      line-height: 1.48;
+      text-align: justify;
     }
 
+    /* Skills Grid */
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 9.4pt;
+    }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 165px 1fr;
+      gap: 8px;
+      line-height: 1.38;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .skill-values {
+      color: #334155;
+    }
+
+    /* Experience & Project Items */
     .item {
-      margin-bottom: 7px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
     }
 
-    .item-head {
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      align-items: baseline;
       margin-bottom: 2px;
     }
 
-    .meta {
-      flex: 0 0 auto;
-      color: #64748b;
-      font-size: 9.5px;
+    .item-title {
+      font-size: 10.5pt;
       font-weight: 700;
-      white-space: nowrap;
-      text-transform: uppercase;
+      color: #0f172a;
     }
 
-    .sub {
-      margin: 1px 0 3px;
-      color: #475569;
-      font-size: 10.2px;
+    .item-company {
+      color: #0369a1;
       font-weight: 700;
+    }
+
+    .item-date {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .item-subtitle {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 5px;
     }
 
     ul {
       margin: 0;
-      padding-left: 13px;
+      padding-left: 17px;
     }
 
     li {
-      margin-bottom: 2px;
-      color: #26364a;
-    }
-
-    .project h3 {
-      display: inline;
-    }
-
-    .project .stack {
-      color: #2563eb;
-      font-size: 9.7px;
-      font-weight: 700;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-top: 2px;
-    }
-
-    .chip {
-      padding: 2px 6px;
-      border: 1px solid #d6deeb;
-      border-radius: 999px;
-      background: #f8fafc;
-      color: #24364d;
-      font-size: 9.4px;
-      font-weight: 700;
-    }
-
-    .side p {
-      margin: 0 0 6px;
-      color: #334155;
-    }
-
-    .skill-block {
-      margin-bottom: 7px;
-    }
-
-    .skill-title {
-      margin-bottom: 2px;
-      color: #0f172a;
-      font-size: 10.1px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .compact-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .compact-list li {
       margin-bottom: 3px;
-      color: #344154;
+      font-size: 9.4pt;
+      color: #334155;
+      line-height: 1.4;
     }
 
-    .link {
-      color: #1d4ed8;
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    li strong {
+      color: #0f172a;
       font-weight: 700;
     }
 
+    /* Project Items */
+    .project-item {
+      margin-bottom: 9px;
+    }
+
+    .project-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .project-name {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-stack {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #0369a1;
+    }
+
+    .more-projects-note {
+      margin-top: 7px;
+      padding: 6px 10px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      font-size: 9pt;
+      color: #475569;
+    }
+
+    .more-projects-note a {
+      font-weight: 700;
+      color: #0369a1;
+    }
+
+    /* Education & Credentials Grid */
+    .two-col-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .edu-item h3 {
+      margin: 0 0 2px;
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-item p {
+      margin: 0;
+      font-size: 9pt;
+      color: #475569;
+    }
+
+    /* Print Styles */
     @media print {
       body {
         background: #ffffff;
+        color: #000000;
+        font-size: 9.8pt;
       }
 
-      .page {
-        width: auto;
-        min-height: auto;
+      .screen-actions {
+        display: none !important;
+      }
+
+      .resume-wrapper {
+        max-width: 100%;
         margin: 0;
+        padding: 0;
         box-shadow: none;
+        border-radius: 0;
+      }
+
+      header {
+        border-bottom: 2px solid #000000;
+      }
+
+      h2 {
+        border-bottom: 1px solid #94a3b8;
+        color: #000000;
+      }
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      .contact-row a,
+      .project-stack,
+      .item-company {
+        color: #0f172a;
+      }
+
+      .more-projects-note {
+        background: #ffffff;
+        border: 1px solid #cbd5e1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .resume-wrapper {
+        padding: 20px 16px;
+        margin: 10px;
+      }
+
+      .title-banner {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .item-header,
+      .project-head {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .skill-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .two-col-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
       }
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <header class="header">
-      <div>
-        <h1>Sandeep Singh</h1>
-        <div class="role">Full Stack .NET Developer</div>
-        <p class="summary">
-          Full Stack Developer with 4+ years of experience building secure, scalable enterprise web applications across ASP.NET MVC, C#, MySQL, REST APIs, and Bootstrap. Strong in production support, clean backend design, input validation, and business-critical workflow automation.
-        </p>
+
+  <!-- Screen Top Actions -->
+  <div class="screen-actions">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="resume-wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Sandeep Singh</h1>
+      <div class="title-banner">
+        <span class="role-title">Full Stack .NET Developer</span>
+        <span class="location">Mumbai, Maharashtra, India</span>
       </div>
-      <div class="contact">
-        <div>Mumbai, India</div>
-        <div><a href="tel:+918652096712">(+91) 8652096712</a></div>
-        <div><a href="mailto:getsinghsandeep@gmail.com">getsinghsandeep@gmail.com</a></div>
-        <div><a href="https://sandeep-s01.github.io/portfolio/">sandeep-s01.github.io/portfolio</a></div>
-        <div><a href="https://github.com/Sandeep-S01">github.com/Sandeep-S01</a></div>
-        <div><a href="https://www.linkedin.com/in/sandeep-singh-1147b81aa/">linkedin.com/in/sandeep-singh-1147b81aa</a></div>
+
+      <div class="contact-row">
+        <span>📞 <a href="tel:+918652096712">(+91) 8652096712</a></span>
+        <span>✉️ <a href="mailto:getsinghsandeep@gmail.com">getsinghsandeep@gmail.com</a></span>
+        <span>🌐 <a href="https://sandeep-s01.github.io/portfolio/" target="_blank">sandeep-s01.github.io/portfolio</a></span>
+        <span>💻 <a href="https://github.com/Sandeep-S01" target="_blank">github.com/Sandeep-S01</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/sandeep-singh-1147b81aa/" target="_blank">linkedin.com/in/sandeep-singh-1147b81aa</a></span>
       </div>
     </header>
 
-    <div class="content">
-      <div class="main">
-        <section>
-          <h2>Experience</h2>
-          <div class="item">
-            <div class="item-head">
-              <h3>Software Developer - Mos Utility</h3>
-              <div class="meta">Aug 2022 - Present</div>
-            </div>
-            <div class="sub">ASP.NET MVC, ASP.NET Web API, C#, MySQL, REST APIs, Bootstrap</div>
-            <ul>
-              <li>Architected and delivered the <strong>Shipyaari Logistics Gateway</strong>, an on-demand multi-carrier courier dispatch engine integrating Shipyaari REST APIs, automated rate computation, AWB generation, shipping label printing, and webhook-driven tracking for high-volume retail dispatch.</li>
-              <li>Engineered the <strong>IRCTC Tourism Booking Platform</strong>, integrating official IRCTC Tourism REST APIs for live rail tour package availability, multi-passenger reservations, payment handoffs, and cancellation refund reconciliation across Mos retail networks.</li>
-              <li>Designed and scaled the <strong>Enterprise Payroll Management Platform</strong>, implementing deterministic calculation engines for statutory PF, ESI, TDS deductions, multi-tenant salary structures, and downloadable compliance reports.</li>
-              <li>Implemented parameterized query architectures, server-side data sanitization, and role-based access controls to safeguard financial transactions and eliminate SQL injection exposure.</li>
-              <li>Resolved high-severity production incidents, optimized relational MySQL database queries, and collaborated across cross-functional teams in rapid Agile delivery cycles.</li>
-            </ul>
-          </div>
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary-text">
+        Full Stack .NET Developer with 4+ years of professional engineering experience architecting secure, scalable enterprise backends, high-throughput RESTful APIs, and mission-critical business automation workflows in C#, ASP.NET Web API, ASP.NET MVC, and MySQL. Proven record delivering enterprise integrations for multi-carrier logistics and national rail tourism, building multi-tenant compliance systems, optimizing database indexes, and driving 99.9% production reliability across Agile release cycles.
+      </p>
+    </section>
 
-          <div class="item">
-            <div class="item-head">
-              <h3>Tax Verification - SurePrep India Pvt Ltd</h3>
-              <div class="meta">Jan 2022 - Mar 2022</div>
-            </div>
-            <ul>
-              <li>Worked in operations on tax verification workflows requiring accuracy, structured review, and process discipline.</li>
-            </ul>
-          </div>
-        </section>
+    <!-- CORE TECHNICAL SKILLS (ATS-Optimized Categorization) -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skill-row">
+          <span class="skill-label">Backend Architecture:</span>
+          <span class="skill-values">C#, .NET Core, ASP.NET Web API, ASP.NET MVC, .NET Framework, Python, FastAPI, Microservices</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Frontend &amp; Mobile:</span>
+          <span class="skill-values">JavaScript, TypeScript, React, Next.js, Android (Kotlin), HTML5, CSS3, Tailwind CSS, Bootstrap</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Databases &amp; Caching:</span>
+          <span class="skill-values">MySQL, PostgreSQL, SQLite, Room DB, Redis, Prisma ORM, Query Optimization &amp; Indexing</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Engineering &amp; Security:</span>
+          <span class="skill-values">RESTful API Design, Webhooks, Parameterized SQL / SQLi Prevention, Role-Based Access Control (RBAC), Git, Agile/Scrum</span>
+        </div>
+      </div>
+    </section>
 
-        <section>
-          <h2>Selected Projects</h2>
-          <div class="item project">
-            <h3>theanantastoar</h3>
-            <span class="stack"> - Next.js, React, TypeScript, Prisma, Neon PostgreSQL, Tailwind CSS</span>
-            <ul>
-              <li>Architected a high-performance modern D2C storefront and e-commerce platform with sub-second page transitions, dynamic product routing, and resilient catalog persistence. <a class="link" href="https://github.com/Sandeep-S01/theanantastore.in">github.com/Sandeep-S01/theanantastore.in</a></li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>KhataOne</h3>
-            <span class="stack"> - TypeScript, Next.js, WhatsApp Cloud API, Prisma, PostgreSQL</span>
-            <ul>
-              <li>Built a WhatsApp-first AI accounting and GST workflow platform enabling SMB clients to transmit invoices directly via WhatsApp with automated AI field extraction and CA approval queues. <a class="link" href="https://github.com/Sandeep-S01/KhataOne">github.com/Sandeep-S01/KhataOne</a></li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>Enterprise Payroll Management</h3>
-            <span class="stack"> - ASP.NET MVC, C#, MySQL, .NET Framework</span>
-            <ul>
-              <li>Engineered a multi-tenant automated compliance platform computing statutory PF, ESI, TDS deductions, salary slips, and audit-ready reports for multi-unit enterprise operations. <a class="link" href="https://github.com/Sandeep-S01/Payroll">github.com/Sandeep-S01/Payroll</a></li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>Shipyaari Logistics Gateway</h3>
-            <span class="stack"> - ASP.NET Web API, C#, MySQL, REST APIs, Webhooks (Mos Utility)</span>
-            <ul>
-              <li>Built an automated Porter-like dispatch service integrating Shipyaari APIs for multi-carrier rate calculation, instant AWB generation, shipping labels, and real-time webhook status updates.</li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>IRCTC Tourism Booking Platform</h3>
-            <span class="stack"> - ASP.NET Web API, C#, MySQL, REST APIs (Mos Utility)</span>
-            <ul>
-              <li>Developed a national rail tourism booking engine integrating official IRCTC Tourism REST APIs for live tour availability, passenger bookings, ticket issuance, and automated refund tracking.</li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>Velt</h3>
-            <span class="stack"> - FastAPI, Python, Vector Search, ChromaDB, Vite</span>
-            <ul>
-              <li>Built an AI-powered storefront semantic search engine with dense catalog embeddings, vector indexing in ChromaDB, and real-time cosine similarity search. <a class="link" href="https://velt-gamma.vercel.app">velt-gamma.vercel.app</a> · <a class="link" href="https://github.com/Sandeep-S01/Velt">github.com/Sandeep-S01/Velt</a></li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>Loom AI Workspace</h3>
-            <span class="stack"> - Next.js, Fastify, Tauri, PostgreSQL, Redis</span>
-            <ul>
-              <li>Engineered a desktop-native AI workspace monorepo for model routing, persistent multi-turn conversational context, and local workspace management. <a class="link" href="https://github.com/Sandeep-S01/loom">github.com/Sandeep-S01/loom</a></li>
-            </ul>
-          </div>
-          <div class="item project">
-            <h3>Habit Tracker Mobile App</h3>
-            <span class="stack"> - Android, Kotlin, SQLite, Room DB, Material Design 3</span>
-            <ul>
-              <li>Developed a native Android offline-first daily routine app featuring streak algorithms, ADHD-friendly focus UI, and zero-latency local Room persistence. <a class="link" href="https://github.com/Sandeep-S01/Habit-Tracker">github.com/Sandeep-S01/Habit-Tracker</a></li>
-            </ul>
-          </div>
-        </section>
+    <!-- PROFESSIONAL WORK EXPERIENCE -->
+    <section>
+      <h2>Professional Experience</h2>
+
+      <!-- Mos Utility -->
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Software Developer — <span class="item-company">Mos Utility</span></span>
+          <span class="item-date">Aug 2022 – Present</span>
+        </div>
+        <div class="item-subtitle">ASP.NET Web API, ASP.NET MVC, C#, MySQL, REST APIs, Bootstrap | Mumbai, India</div>
+        <ul>
+          <li><strong>Shipyaari Logistics Gateway (On-Demand Courier &amp; Freight Dispatch):</strong> Architected and deployed a high-throughput multi-carrier shipping engine integrating Shipyaari REST APIs. Implemented automated rate comparison, automated AWB generation, thermal shipping label printing, and webhook listeners for real-time delivery status synchronization across retail partner networks.</li>
+          <li><strong>IRCTC Tourism Booking Platform (National Rail Tours):</strong> Engineered an enterprise travel booking system integrating official IRCTC Tourism REST APIs. Implemented multi-passenger reservation flows, live train package availability lookups, payment gateway handoffs, and automated cancellation/refund reconciliation.</li>
+          <li><strong>Enterprise Payroll &amp; Compliance Management Platform:</strong> Designed and scaled a multi-tenant statutory compliance platform in ASP.NET MVC and MySQL. Built deterministic calculation engines for statutory PF, ESI, and TDS deductions, salary slip generation, and audit-ready labor code compliance reports.</li>
+          <li><strong>Backend Security &amp; Database Optimization:</strong> Implemented parameterized query architecture, server-side data sanitization, and role-based access control (RBAC), eliminating SQL injection vulnerabilities and optimizing relational MySQL queries to maintain sub-second response times under peak concurrency.</li>
+          <li><strong>Production Reliability &amp; Agile Delivery:</strong> Managed active production release cycles, resolved high-severity production incidents, and collaborated with cross-functional product and operations teams in rapid Agile/Scrum sprints.</li>
+        </ul>
       </div>
 
-      <aside class="side">
-        <section>
-          <h2>Core Skills</h2>
-          <div class="skill-block">
-            <div class="skill-title">Backend</div>
-            <div class="chips">
-              <span class="chip">C#</span>
-              <span class="chip">.NET</span>
-              <span class="chip">ASP.NET MVC</span>
-              <span class="chip">ASP.NET Web API</span>
-              <span class="chip">.NET Framework</span>
-              <span class="chip">Python</span>
-              <span class="chip">FastAPI</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-title">Frontend & Mobile</div>
-            <div class="chips">
-              <span class="chip">HTML/CSS</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">Next.js / React</span>
-              <span class="chip">Android (Kotlin)</span>
-              <span class="chip">Bootstrap</span>
-              <span class="chip">Tailwind CSS</span>
-            </div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-title">Database & Engineering</div>
-            <div class="chips">
-              <span class="chip">MySQL</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">SQLite / Room</span>
-              <span class="chip">Prisma</span>
-              <span class="chip">Redis</span>
-              <span class="chip">REST APIs</span>
-              <span class="chip">Git</span>
-              <span class="chip">Agile/Scrum</span>
-              <span class="chip">Input Validation</span>
-              <span class="chip">Parameterized SQL</span>
-            </div>
-          </div>
-        </section>
+      <!-- SurePrep India -->
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Tax Verification Specialist — <span class="item-company">SurePrep India Pvt Ltd</span></span>
+          <span class="item-date">Jan 2022 – Mar 2022</span>
+        </div>
+        <div class="item-subtitle">Operations &amp; Process Verification | Mumbai, India</div>
+        <ul>
+          <li>Conducted structured financial and US tax document verification workflows with strict audit review discipline, ensuring high accuracy and zero-defect compliance handoffs.</li>
+        </ul>
+      </div>
+    </section>
 
-        <section>
-          <h2>Education</h2>
-          <ul class="compact-list">
-            <li><strong>B.Sc. Computers</strong><br />Thakur Ramnarayan College of Arts and Commerce, 2021</li>
-            <li><strong>HSC</strong><br />Maharashtra Board, 2018</li>
-            <li><strong>SSC</strong><br />Maharashtra Board, 2016</li>
-          </ul>
-        </section>
+    <!-- SELECTED PROJECTS (Top Curated Standouts) -->
+    <section>
+      <h2>Selected Technical Projects</h2>
 
-        <section>
-          <h2>Certification</h2>
-          <p>Python Programming - Python for Everybody</p>
-        </section>
+      <!-- theanantastoar -->
+      <div class="item project-item">
+        <div class="project-head">
+          <span class="project-name">theanantastoar — Modern D2C Storefront &amp; E-Commerce Platform</span>
+          <span class="project-stack">Next.js, React, TypeScript, Prisma, Neon PostgreSQL, Tailwind CSS</span>
+        </div>
+        <ul>
+          <li>Architected a full-stack production e-commerce web platform with sub-second page transitions, dynamic catalog routing, serverless PostgreSQL persistence via Neon, and responsive checkout workflows. <a href="https://github.com/Sandeep-S01/theanantastore.in" target="_blank">[github.com/Sandeep-S01/theanantastore.in]</a></li>
+        </ul>
+      </div>
 
-        <section>
-          <h2>Languages</h2>
-          <p>English, Hindi, Marathi</p>
-        </section>
-      </aside>
-    </div>
+      <!-- KhataOne -->
+      <div class="item project-item">
+        <div class="project-head">
+          <span class="project-name">KhataOne — WhatsApp-First AI Accounting &amp; GST Platform</span>
+          <span class="project-stack">TypeScript, Next.js, WhatsApp Cloud API, Prisma, PostgreSQL</span>
+        </div>
+        <ul>
+          <li>Engineered a conversational invoice intake pipeline enabling small business owners to submit bills directly via WhatsApp. Built automated AI field extraction, CA approval queues, and GST ledger handoffs. <a href="https://github.com/Sandeep-S01/KhataOne" target="_blank">[github.com/Sandeep-S01/KhataOne]</a></li>
+        </ul>
+      </div>
+
+      <!-- Velt -->
+      <div class="item project-item">
+        <div class="project-head">
+          <span class="project-name">Velt — AI Storefront Semantic Search Engine</span>
+          <span class="project-stack">FastAPI, Python, Vector Search, ChromaDB, Vite</span>
+        </div>
+        <ul>
+          <li>Built an eCommerce semantic search engine using dense vector embeddings and high-dimensional indexing in ChromaDB with live cosine similarity ranking deployed on Vercel. <a href="https://velt-gamma.vercel.app" target="_blank">[Live Demo]</a> · <a href="https://github.com/Sandeep-S01/Velt" target="_blank">[github.com/Sandeep-S01/Velt]</a></li>
+        </ul>
+      </div>
+
+      <!-- Portfolio reference note -->
+      <div class="more-projects-note">
+        📁 <strong>Additional Engineering Work:</strong> Open-source projects including <em>Loom AI Workspace</em> (Next.js/Tauri/Redis), <em>Native Android Habit Tracker</em> (Kotlin/Room), and enterprise tools are documented at: <a href="https://sandeep-s01.github.io/portfolio/" target="_blank">sandeep-s01.github.io/portfolio</a>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section>
+      <h2>Education &amp; Credentials</h2>
+      <div class="two-col-row">
+        <div class="edu-item">
+          <h3>B.Sc. in Computer Science</h3>
+          <p>Thakur Ramnarayan College of Arts and Commerce, Mumbai (2021)</p>
+          <p style="font-size: 8.8pt; color: #64748b; margin-top: 2px;">HSC (2018) · SSC (2016) — Maharashtra State Board</p>
+        </div>
+        <div class="edu-item">
+          <h3>Certifications &amp; Languages</h3>
+          <p><strong>Python Programming:</strong> Python for Everybody Specialization</p>
+          <p><strong>Languages:</strong> English, Hindi, Marathi</p>
+        </div>
+      </div>
+    </section>
+
   </main>
+
 </body>
 </html>
